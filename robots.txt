@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hankandyu.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
