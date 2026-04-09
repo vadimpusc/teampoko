@@ -1,0 +1,17 @@
+{
+  "name": "hank-and-yu",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/fetch-youtube.js && vite build",
+    "preview": "vite preview",
+    "fetch-videos": "node scripts/fetch-youtube.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.0",
+    "svelte": "^4.2.12",
+    "vite": "^5.2.0"
+  }
+}
