@@ -1,6 +1,4 @@
 <script>
-  export let onNavigate = () => {}
-
   const socialLinks = [
     { name: 'YouTube', url: 'https://youtube.com/@HankandYu', icon: 'youtube' },
     { name: 'Instagram', url: 'https://instagram.com/hankandyu', icon: 'instagram' },

@@ -4,7 +4,6 @@
   import SEO from './components/SEO.svelte'
   import Home from './pages/Home.svelte'
   import OurStory from './pages/OurStory.svelte'
-  import YouTube from './pages/YouTube.svelte'
   import Contact from './pages/Contact.svelte'
   import NotFound from './pages/NotFound.svelte'
 
@@ -21,8 +20,6 @@
         return 'home'
       case '/our-story':
         return 'our-story'
-      case '/youtube':
-        return 'youtube'
       case '/contact':
         return 'contact'
       default:
@@ -49,8 +46,6 @@
     <Home onNavigate={navigate} />
   {:else if page === 'our-story'}
     <OurStory />
-  {:else if page === 'youtube'}
-    <YouTube />
   {:else if page === 'contact'}
     <Contact />
   {:else}
@@ -58,7 +53,7 @@
   {/if}
 </main>
 
-<Footer onNavigate={navigate} />
+<Footer />
 
 <style>
   :global(*) {

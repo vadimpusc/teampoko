@@ -15,11 +15,6 @@
       description: 'We met in London and decided to document our life together on YouTube. From weekend escapes to quiet days at home, our channel is a diary of the places we visit and the moments we want to remember.',
       image: '/images/story-1.jpg'
     },
-    youtube: {
-      title: 'YouTube Channel - Hank and Yu',
-      description: 'Watch our travel vlogs between Europe and Japan. Subscribe to Hank and Yu for videos about discovering new places, slow travel, and living between two cultures.',
-      image: '/images/channel-icon.png'
-    },
     contact: {
       title: 'Contact - Hank and Yu',
       description: 'Get in touch with Hank and Yu for sponsorships, collaborations, or just to say hello. We read every message!',
@@ -77,9 +72,8 @@
     "itemListElement": [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
       { "@type": "ListItem", position: 2, name: "Our Story", item: siteUrl + "/our-story" },
-      { "@type": "ListItem", position: 3, name: "YouTube", item: siteUrl + "/youtube" },
-      { "@type": "ListItem", position: 4, name: "Shop", item: shopUrl },
-      { "@type": "ListItem", position: 5, name: "Contact", item: siteUrl + "/contact" }
+      { "@type": "ListItem", position: 3, name: "Shop", item: shopUrl },
+      { "@type": "ListItem", position: 4, name: "Contact", item: siteUrl + "/contact" }
     ]
   })}</script>
   

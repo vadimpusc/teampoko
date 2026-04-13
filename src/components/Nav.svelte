@@ -20,7 +20,6 @@
   const navItems = [
     { path: '/', label: 'Home', href: '/', external: false },
     { path: '/our-story', label: 'Our Story', href: '/our-story', external: false },
-    { path: '/youtube', label: 'YouTube', href: '/youtube', external: false },
     { path: '/shop', label: 'Shop', href: 'https://shop.hankandyu.com', external: true },
     { path: '/contact', label: 'Contact', href: '/contact', external: false }
   ]
