@@ -1,12 +1,15 @@
 <section class="page-header">
-  <h1>Our Story</h1>
-  <p class="subtitle">How it all began</p>
+  <div class="header-content">
+    <span class="overline">Our Journey</span>
+    <h1>Between Two Worlds</h1>
+    <p class="subtitle">How it all began</p>
+  </div>
 </section>
 
 <section class="story-content">
   <div class="content-wrapper">
     <p class="lead">
-      We are a couple who met in London and decided to document our life together on YouTube. 
+      We are a couple who met in London and began documenting our life together on YouTube. 
       From weekend escapes to quiet days at home, our channel is a diary of the places we visit 
       and the moments we want to remember.
     </p>
@@ -38,19 +41,19 @@
 
     <div class="values-section">
       <h2>What We Stand For</h2>
-      <div class="values-grid-premium">
-        <div class="value-card-premium">
-          <div class="value-icon-premium">🌍</div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-number">01</div>
           <h3>Slow Travel</h3>
           <p>We believe in taking time to experience places rather than racing through bucket lists.</p>
         </div>
-        <div class="value-card-premium">
-          <div class="value-icon-premium">🏠</div>
+        <div class="value-card">
+          <div class="value-number">02</div>
           <h3>Home Anywhere</h3>
           <p>Whether in Europe or Japan, we find comfort and create home in every place we stay.</p>
         </div>
-        <div class="value-card-premium">
-          <div class="value-icon-premium">💕</div>
+        <div class="value-card">
+          <div class="value-number">03</div>
           <h3>Real Moments</h3>
           <p>We share the highs and lows of our journey together, staying true to our experiences.</p>
         </div>
@@ -61,149 +64,193 @@
 
 <section class="image-section">
   <div class="image-grid">
-    <img src="/images/story-1.jpg" alt="Hank and Yu together" />
-    <img src="/images/story-2.jpg" alt="Travel moment" />
-    <img src="/images/story-3.jpg" alt="Everyday life" />
+    <div class="image-item">
+      <img src="/images/story-1.jpg" alt="Hank and Yu together" />
+    </div>
+    <div class="image-item">
+      <img src="/images/story-2.jpg" alt="Travel moment" />
+    </div>
+    <div class="image-item">
+      <img src="/images/story-3.jpg" alt="Everyday life" />
+    </div>
   </div>
 </section>
 
 <style>
   .page-header {
-    padding: 8rem 2rem 4rem;
+    padding: 10rem 2rem 6rem;
     text-align: center;
-    background: linear-gradient(180deg, #F5F0E8 0%, #FEFCF9 100%);
+    background: #0D0D0D;
+    position: relative;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(201, 168, 124, 0.3), transparent);
+  }
+
+  .overline {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #C9A87C;
+    margin-bottom: 1.5rem;
   }
 
   .page-header h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    color: #2D2926;
-    margin-bottom: 1rem;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #F5F2ED;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
   }
 
   .subtitle {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.25rem;
-    color: #6B6560;
+    font-style: italic;
+    color: rgba(245, 242, 237, 0.55);
   }
 
   .story-content {
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     max-width: 800px;
     margin: 0 auto;
+    background: #0D0D0D;
   }
 
   .content-wrapper p {
-    font-size: 1.125rem;
-    line-height: 1.9;
-    color: #6B6560;
-    margin-bottom: 1.75rem;
+    font-size: 1.1rem;
+    line-height: 2;
+    color: rgba(245, 242, 237, 0.75);
+    margin-bottom: 2rem;
+    font-weight: 400;
   }
 
   .content-wrapper .lead {
-    font-size: 1.35rem;
-    color: #2D2926;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: #F5F2ED;
+    font-style: italic;
     line-height: 1.7;
+    padding-left: 2rem;
+    border-left: 1px solid rgba(201, 168, 124, 0.3);
   }
 
-   .values-section {
-     margin-top: 5rem;
-     padding-top: 5rem;
-     border-top: 1px solid #E8E2D9;
-     position: relative;
-     overflow: hidden;
-   }
-   
-   .values-section::before {
-     content: '';
-     position: absolute;
-     top: 0;
-     left: 50%;
-     transform: translateX(-50%);
-     width: 120px;
-     height: 4px;
-     background: linear-gradient(90deg, #C9A87C, #B8956A);
-     border-radius: 2px;
-   }
-   
-    .values-section h2 {
-      font-size: clamp(2rem, 5vw, 2.5rem);
-      color: #2D2926;
-      text-align: center;
-      margin-bottom: 4rem;
-      position: relative;
-      display: block;
-      width: 100%;
-    }
-   
-   .values-section h2::after {
-     content: '';
-     position: absolute;
-     bottom: -12px;
-     left: 50%;
-     transform: translateX(-50%);
-     width: 60px;
-     height: 3px;
-     background: #C9A87C;
-     border-radius: 1.5px;
-   }
-   
-    .values-grid-premium {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2.5rem;
-      justify-content: center;
-    }
-   
-   .value-card-premium {
-     background: #FFFFFF;
-     padding: 2.5rem;
-     border-radius: 20px;
-     text-align: center;
-     box-shadow: 0 8px 32px rgba(45, 41, 38, 0.08);
-     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-     border: 1px solid rgba(201, 168, 124, 0.1);
-     backdrop-filter: blur(10px);
-   }
-   
-   .value-card-premium:hover {
-     transform: translateY(-8px) scale(1.02);
-     box-shadow: 0 12px 40px rgba(45, 41, 38, 0.12);
-     border-color: rgba(201, 168, 124, 0.2);
-   }
-   
-   .value-icon-premium {
-     font-size: 3rem;
-     margin-bottom: 1.5rem;
-     width: 80px;
-     height: 80px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: linear-gradient(135deg, rgba(201, 168, 124, 0.1), rgba(184, 149, 106, 0.1));
-     border-radius: 50%;
-     margin: 0 auto 1.5rem;
-   }
-   
-   .value-card-premium h3 {
-     font-family: 'Playfair Display', serif;
-     font-size: 1.4rem;
-     font-weight: 600;
-     color: #2D2926;
-     margin-bottom: 1rem;
-     letter-spacing: -0.5px;
-   }
-   
-   .value-card-premium p {
-     font-size: 1rem;
-     color: #5A5550;
-     line-height: 1.7;
-     margin: 0;
-   }
+  .values-section {
+    margin-top: 6rem;
+    padding-top: 5rem;
+    position: relative;
+  }
+
+  .values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A87C, transparent);
+  }
+
+  .values-section h2 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    color: #F5F2ED;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 400;
+  }
+
+  .value-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #F5F2ED;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+
+  .value-card p {
+    font-size: 0.95rem;
+    color: rgba(245, 242, 237, 0.6);
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .value-card {
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(245, 242, 237, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A87C, transparent);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .value-card:hover {
+    border-color: rgba(201, 168, 124, 0.2);
+    background: rgba(201, 168, 124, 0.03);
+  }
+
+  .value-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .value-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #C9A87C;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .value-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #E8E4DF;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+
+  .value-card p {
+    font-size: 0.95rem;
+    color: rgba(245, 242, 237, 0.55);
+    line-height: 1.8;
+    margin: 0;
+  }
 
   .image-section {
-    padding: 2rem;
+    padding: 4rem 2rem 8rem;
     max-width: 1200px;
-    margin: 0 auto 4rem;
+    margin: 0 auto;
+    background: #0D0D0D;
   }
 
   .image-grid {
@@ -212,20 +259,45 @@
     gap: 1.5rem;
   }
 
-  .image-grid img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 12px;
+  .image-item {
+    overflow: hidden;
   }
 
-  @media (max-width: 768px) {
+  .image-item img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: all 0.6s ease;
+  }
+
+  .image-item:hover img {
+    transform: scale(1.03);
+    filter: grayscale(10%);
+  }
+
+  @media (max-width: 900px) {
+    .values-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .image-item img {
+      aspect-ratio: 16/10;
+    }
+  }
+
+  @media (max-width: 600px) {
     .page-header {
-      padding: 7rem 1.5rem 3rem;
+      padding: 8rem 1.5rem 4rem;
     }
 
     .story-content {
-      padding: 2rem 1.5rem;
+      padding: 4rem 1.5rem;
     }
 
     .content-wrapper p,
@@ -233,16 +305,12 @@
       font-size: 1rem;
     }
 
-    .values-grid {
-      grid-template-columns: 1fr;
+    .content-wrapper .lead {
+      font-size: 1.25rem;
     }
 
-    .image-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .image-grid img {
-      aspect-ratio: 4/3;
+    .image-section {
+      padding: 2rem 1.5rem 5rem;
     }
   }
 </style>

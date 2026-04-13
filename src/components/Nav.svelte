@@ -36,7 +36,7 @@
 <header class:scrolled class:home={isHome}>
   <nav class="nav-container">
     <a href="/" class="logo" on:click|preventDefault={() => navigate('/')}>
-      <span class="logo-text">Hank & Yu</span>
+      <span class="logo-text">Hank <span class="amp">&</span> Yu</span>
     </a>
 
     <button 
@@ -84,25 +84,25 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1.25rem 2rem;
-    transition: all 0.3s ease;
+    padding: 1.5rem 3rem;
+    transition: all 0.4s ease;
     background: transparent;
   }
 
   header.home {
-    background: rgba(254, 252, 249, 0.85);
-    backdrop-filter: blur(8px);
+    background: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(10px);
   }
 
   header.scrolled {
-    background: rgba(254, 252, 249, 0.98);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 2px 20px rgba(45, 41, 38, 0.1);
-    padding: 1rem 2rem;
+    background: rgba(13, 13, 13, 0.98);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 0 rgba(201, 168, 124, 0.1);
+    padding: 1rem 3rem;
   }
 
   .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -110,29 +110,39 @@
   }
 
   .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2D2926;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #F5F2ED;
+    letter-spacing: 0.05em;
+  }
+
+  .amp {
+    font-style: italic;
+    color: #C9A87C;
   }
 
   .logo-text {
-    letter-spacing: 0.02em;
+    font-weight: 300;
   }
 
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 3rem;
+    align-items: center;
   }
 
   .nav-links a {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #6B6560;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245, 242, 237, 0.75);
     position: relative;
-    padding: 0.25rem 0;
-    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
   }
 
   .nav-links a::after {
@@ -141,14 +151,14 @@
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 1px;
     background: #C9A87C;
     transition: width 0.3s ease;
   }
 
   .nav-links a:hover,
   .nav-links a.active {
-    color: #2D2926;
+    color: #F5F2ED;
   }
 
   .nav-links a:hover::after,
@@ -159,7 +169,7 @@
   .mobile-toggle {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
@@ -168,9 +178,9 @@
 
   .mobile-toggle span {
     display: block;
-    width: 24px;
-    height: 2px;
-    background: #2D2926;
+    width: 28px;
+    height: 1px;
+    background: #F5F2ED;
     transition: all 0.3s ease;
   }
 
@@ -205,11 +215,11 @@
       left: 0;
       right: 0;
       flex-direction: column;
-      background: rgba(254, 252, 249, 0.98);
-      backdrop-filter: blur(10px);
-      padding: 1.5rem;
-      gap: 1.25rem;
-      box-shadow: 0 10px 30px rgba(45, 41, 38, 0.1);
+      background: rgba(13, 13, 13, 0.98);
+      backdrop-filter: blur(20px);
+      padding: 2rem;
+      gap: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       transform: translateY(-20px);
       opacity: 0;
       visibility: hidden;
@@ -223,7 +233,7 @@
     }
 
     .nav-links a {
-      padding: 0.5rem 0;
+      font-size: 0.85rem;
     }
   }
 </style>

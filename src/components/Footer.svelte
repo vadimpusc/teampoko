@@ -7,10 +7,13 @@
 </script>
 
 <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-line"></div>
+  </div>
   <div class="footer-container">
     <div class="footer-brand">
-      <span class="footer-logo">Hank & Yu</span>
-      <p class="footer-tagline">Traveling between Europe and Japan</p>
+      <span class="footer-logo">Hank <span class="amp">&</span> Yu</span>
+      <p class="footer-tagline">A journey between Europe and Japan</p>
     </div>
 
     <div class="footer-social">
@@ -33,21 +36,34 @@
       {/each}
     </div>
 
-    <p class="footer-copyright">
-      © 2026 Hank and Yu. All rights reserved.
-    </p>
-    
-    <p class="footer-designed">
-      Design by <a href="https://sanrokuku.com" target="_blank" rel="noopener noreferrer">San Roku Ku</a>
-    </p>
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        © 2026 Hank and Yu. All rights reserved.
+      </p>
+      <p class="footer-designed">
+        Design by <a href="https://sanrokuku.com" target="_blank" rel="noopener noreferrer">San Roku Ku</a>
+      </p>
+    </div>
   </div>
 </footer>
 
 <style>
   .footer {
-    background: #2D2926;
-    color: #FEFCF9;
-    padding: 3rem 2rem;
+    background: #0A0A0A;
+    color: #F5F2ED;
+    padding: 0;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+
+  .footer-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, rgba(201, 168, 124, 0.4));
   }
 
   .footer-container {
@@ -56,68 +72,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     text-align: center;
+    padding: 0 2rem 4rem;
   }
 
   .footer-brand {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   .footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .amp {
+    font-style: italic;
+    color: #C9A87C;
   }
 
   .footer-tagline {
-    font-size: 0.9rem;
-    color: #9A9590;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(245, 242, 237, 0.55);
+    letter-spacing: 0.02em;
   }
 
   .footer-social {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .social-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(254, 252, 249, 0.1);
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(245, 242, 237, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FEFCF9;
-    transition: all 0.3s ease;
+    color: rgba(245, 242, 237, 0.65);
+    transition: all 0.4s ease;
   }
 
   .social-link:hover {
-    background: #C9A87C;
+    border-color: #C9A87C;
+    color: #C9A87C;
     transform: translateY(-3px);
   }
 
   .social-link svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(245, 242, 237, 0.1);
   }
 
   .footer-copyright {
-    font-size: 0.85rem;
-    color: #9A9590;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: rgba(245, 242, 237, 0.4);
   }
 
   .footer-designed {
-    font-size: 0.8rem;
-    color: #6B6560;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: rgba(245, 242, 237, 0.3);
   }
 
   .footer-designed a {
-    color: #9A9590;
-    transition: color 0.2s ease;
+    color: rgba(245, 242, 237, 0.4);
+    transition: color 0.3s ease;
   }
 
   .footer-designed a:hover {
@@ -125,8 +164,17 @@
   }
 
   @media (max-width: 480px) {
-    .footer {
-      padding: 2rem 1.5rem;
+    .footer-container {
+      padding: 0 1.5rem 3rem;
+    }
+
+    .footer-top {
+      padding-top: 3rem;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
     }
   }
 </style>
