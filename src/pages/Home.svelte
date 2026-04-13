@@ -21,11 +21,7 @@
 <section class="about-preview">
   <div class="about-content">
     <h2>Our Journey</h2>
-    <p>
-      We met in London and decided to document our life together on YouTube.
-      From weekend escapes to quiet days at home, our channel is a diary of
-      the places we visit and the moments we want to remember.
-    </p>
+    <p>We met in London and decided to document our life together on YouTube. From weekend escapes to quiet days at home, our channel is a diary of the places we visit and the moments we want to remember.</p>
     <a href="/our-story" class="about-link" on:click|preventDefault={() => onNavigate('/our-story')}>
       Read Our Story →
     </a>
