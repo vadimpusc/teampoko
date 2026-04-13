@@ -102,7 +102,7 @@
 
   .about-preview {
     background: #F5F0E8;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
   }
 
@@ -121,7 +121,7 @@
     font-size: 1.1rem;
     color: #6B6560;
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .about-link {

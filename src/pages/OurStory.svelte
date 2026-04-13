@@ -38,19 +38,19 @@
 
     <div class="values-section">
       <h2>What We Stand For</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-icon">🌍</div>
+      <div class="values-grid-premium">
+        <div class="value-card-premium">
+          <div class="value-icon-premium">🌍</div>
           <h3>Slow Travel</h3>
           <p>We believe in taking time to experience places rather than racing through bucket lists.</p>
         </div>
-        <div class="value-card">
-          <div class="value-icon">🏠</div>
+        <div class="value-card-premium">
+          <div class="value-icon-premium">🏠</div>
           <h3>Home Anywhere</h3>
           <p>Whether in Europe or Japan, we find comfort and create home in every place we stay.</p>
         </div>
-        <div class="value-card">
-          <div class="value-icon">💕</div>
+        <div class="value-card-premium">
+          <div class="value-icon-premium">💕</div>
           <h3>Real Moments</h3>
           <p>We share the highs and lows of our journey together, staying true to our experiences.</p>
         </div>
@@ -105,57 +105,100 @@
     line-height: 1.7;
   }
 
-  .values-section {
-    margin-top: 4rem;
-    padding-top: 4rem;
-    border-top: 1px solid #E8E2D9;
-  }
-
-  .values-section h2 {
-    font-size: clamp(1.75rem, 4vw, 2.25rem);
-    color: #2D2926;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-
-  .value-card {
-    background: #FFFFFF;
-    padding: 2rem;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(45, 41, 38, 0.06);
-    transition: transform 0.3s ease;
-  }
-
-  .value-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .value-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .value-card h3 {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2D2926;
-    margin-bottom: 0.75rem;
-  }
-
-  .value-card p {
-    font-size: 0.95rem;
-    color: #6B6560;
-    line-height: 1.6;
-    margin: 0;
-  }
+   .values-section {
+     margin-top: 5rem;
+     padding-top: 5rem;
+     border-top: 1px solid #E8E2D9;
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .values-section::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 120px;
+     height: 4px;
+     background: linear-gradient(90deg, #C9A87C, #B8956A);
+     border-radius: 2px;
+   }
+   
+    .values-section h2 {
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      color: #2D2926;
+      text-align: center;
+      margin-bottom: 4rem;
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+   
+   .values-section h2::after {
+     content: '';
+     position: absolute;
+     bottom: -12px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 60px;
+     height: 3px;
+     background: #C9A87C;
+     border-radius: 1.5px;
+   }
+   
+    .values-grid-premium {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      justify-content: center;
+    }
+   
+   .value-card-premium {
+     background: #FFFFFF;
+     padding: 2.5rem;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 8px 32px rgba(45, 41, 38, 0.08);
+     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     border: 1px solid rgba(201, 168, 124, 0.1);
+     backdrop-filter: blur(10px);
+   }
+   
+   .value-card-premium:hover {
+     transform: translateY(-8px) scale(1.02);
+     box-shadow: 0 12px 40px rgba(45, 41, 38, 0.12);
+     border-color: rgba(201, 168, 124, 0.2);
+   }
+   
+   .value-icon-premium {
+     font-size: 3rem;
+     margin-bottom: 1.5rem;
+     width: 80px;
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, rgba(201, 168, 124, 0.1), rgba(184, 149, 106, 0.1));
+     border-radius: 50%;
+     margin: 0 auto 1.5rem;
+   }
+   
+   .value-card-premium h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 1.4rem;
+     font-weight: 600;
+     color: #2D2926;
+     margin-bottom: 1rem;
+     letter-spacing: -0.5px;
+   }
+   
+   .value-card-premium p {
+     font-size: 1rem;
+     color: #5A5550;
+     line-height: 1.7;
+     margin: 0;
+   }
 
   .image-section {
     padding: 2rem;

@@ -48,7 +48,6 @@
     background: #2D2926;
     color: #FEFCF9;
     padding: 3rem 2rem;
-    margin-top: 4rem;
   }
 
   .footer-container {
